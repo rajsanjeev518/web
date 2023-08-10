@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hide Text Using Buttons</title>
+    <!-- Add CSS styles to hide text initially -->
+    <style>
+        .hidden-text {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p id="textToHide">This is the text you want to hide.</p>
+    <button id="hideButton1">Hide 1</button>
+    <button id="hideButton2">Hide 2</button>
+    <button id="hideButton3">Hide 3</button>
+    <button id="hideButton4">Hide 4</button>
+    <button id="showButton">Show All</button>
+
+    <!-- Include your JavaScript code -->
+    <script>
+        // Get references to the buttons and the text to hide
+        const hideButton1 = document.getElementById("hideButton1");
+        const hideButton2 = document.getElementById("hideButton2");
+        const hideButton3 = document.getElementById("hideButton3");
+        const hideButton4 = document.getElementById("hideButton4");
+        const showButton = document.getElementById("showButton");
+        const textToHide = document.getElementById("textToHide");
+
+        // Add click event listeners to the buttons
+        hideButton1.addEventListener("click", () => {
+            textToHide.style.display = "none"; // Hide the text
+        });
+
+        hideButton2.addEventListener("click", () => {
+            textToHide.style.display = "none"; // Hide the text
+        });
+
+        hideButton3.addEventListener("click", () => {
+            textToHide.style.display = "none"; // Hide the text
+        });
+
+        hideButton4.addEventListener("click", () => {
+            textToHide.style.display = "none"; // Hide the text
+        });
+
+        showButton.addEventListener("click", () => {
+            textToHide.style.display = "block"; // Show the text
+        });
+    </script>
+</body>
+</html>
